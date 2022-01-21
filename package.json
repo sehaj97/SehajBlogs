@@ -1,0 +1,33 @@
+{
+  "name": "sehajblogs",
+  "version": "1.0.0",
+  "description": "tech blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sehaj97/SehajBlogs.git"
+  },
+  "author": "sehajpreet singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sehaj97/SehajBlogs/issues"
+  },
+  "homepage": "https://github.com/sehaj97/SehajBlogs#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bulma": "^0.9.3",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.13.0"
+  }
+}
