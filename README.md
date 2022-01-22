@@ -10,7 +10,7 @@
 
 ### Application Screenshot
 
-![.\images\img.png](.\images\img.png)
+[images\img.png](images\img.png)
 
   
 ### User Story
