@@ -6,10 +6,11 @@
 
 ### Application Deployment
 
-
+[https://sehajblog.herokuapp.com/](https://sehajblog.herokuapp.com/)
 
 ### Application Screenshot
 
+![images\img.png](images\img.png)
 
   
 ### User Story
