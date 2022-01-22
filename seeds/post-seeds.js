@@ -1,0 +1,34 @@
+const { Post } = require('../models');
+
+const postData = [
+    {
+        title: "Github Helper ",
+        post_content: "GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. what the heck is GitHub and why are developers so excited about it? You may have heard that GitHub is a code sharing and publishing service, or that it's a social networking site for programmers. Both statements are true, but neither explain exactly why GitHub is special. At the heart of GitHub is Git, an open source project started by Linux creator Linus Torvalds. Matthew McCullough, a trainer at GitHub, explains that Git, like other version control systems, manages and stores revisions of projects. Although it's mostly used for code, McCullough says Git could be used to manage any other type of file, such as Word documents or Final Cut projects. Think of it as a filing system for every draft of a document. Some of Git's predecessors, such as CVS and Subversion, have a central “repository” of all the files associated with a project. McCullough explains that when a developer makes changes, those changes are made directly to the central repository. With distributed version control systems like Git, if you want to make a change to a project you copy the whole repository to your own system. You make your changes on your local copy, then you “check in” the changes to the central server. McCullough says this encourages the sharing of more granular changes since you don't have to connect to the server every time you make a change. GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project. The flagship functionality of GitHub is “forking” - copying a repository from one user's account to another. This enables you to take a project that you don't have write access to and modify it under your own account. If you make changes you'd like to share, you can send a notification called a “pull request” to the original owner. That user can then, with a click of a button, merge the changes found in your repo with the original repo. These three features - fork, pull request and merge - are what make GitHub so powerful.",
+        user_id: 3
+    },
+    {
+        title: "Denon Noise Cancelling Earbuds review: Serious sound value",
+        post_content: "Though late to the true wireless earbuds party, legendary Japanese audio brand Denon has taken the plunge with two new competitively priced models — the $159 AH-C830NCW with active noise cancellation (ANC) and the $99 AH-C630W. We check out the noise-canceling model to see how Denon's first try at true wireless compares to similarly priced earbuds from the leaders in this space. Though not as full-featured as some true wireless earbuds, Denon's Noise Cancelling Earbuds (AH-C830NCW) absolutely kill it when it comes to sound quality, noise cancellation, and value for money.",
+        user_id: 1
+    },
+    {
+        title: "HTML basics",
+        post_content: "HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions. HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.",
+        user_id: 2
+
+    },
+    {
+        title: "CSS: Cascading Style Sheets",
+        post_content: "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version. From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification.",
+        user_id: 5
+    },
+    {
+        title: "JS",
+        post_content: "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript. This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about API specifics to Web pages, please see Web APIs and DOM. The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). The JavaScript documentation throughout MDN is based on the latest draft versions of ECMA-262 and ECMA-402. And in cases where some proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use some of those new features. Do not confuse JavaScript with the Java programming language. Both 'Java' and 'JavaScript' are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and use.",
+        user_id: 4
+    }
+]
+
+const seedPosts = () => Post.bulkCreate(postData);
+
+module.exports = seedPosts;
